@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "python-todo-backend"
+version = "0.1.0"
+description = "Example Python FastAPI backend."
+authors = ["PascalEgn <pascal.egner@googlemail.com>"]
+readme = "README.md"
+packages = [{include = "api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+black = "^23.1.0"
+httpx = "^0.23.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
