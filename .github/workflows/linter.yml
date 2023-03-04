@@ -1,0 +1,15 @@
+name: Lint
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Format code with black
+        run: |
+          pip install black
+          black .
