@@ -11,4 +11,4 @@
 
 ## Todos:
 * Add precommit (black)
-* Add types 
+* Add types
